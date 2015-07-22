@@ -5,7 +5,7 @@
   'use strict';
 
   angular.module('720kb.datepicker', [])
-		.directive('datepicker', ['$window', '$compile', '$locale', '$filter', '$interpolate', function manageDirective($window, $compile, $locale, $filter, $interpolate) {
+		.directive('datepickr', ['$window', '$compile', '$locale', '$filter', '$interpolate', function manageDirective($window, $compile, $locale, $filter, $interpolate) {
 
     var A_DAY_IN_MILLISECONDS = 86400000;
     return {
