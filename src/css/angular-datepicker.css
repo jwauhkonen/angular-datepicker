@@ -5,6 +5,14 @@ datepicker a, [datepicker] a, .datepicker a{
 datepicker a:hover, [datepicker] a:hover, .datepicker a:hover{
   text-decoration:none;
 }
+input[ng-model='date'] {
+  text-indent: 7px;
+  border-style: solid;
+  height: 36px;
+  border-width: 1px;
+  border-color: #e7e7e7;
+  outline-width: 1px;
+}
 datepicker select, datepicker select:focus, datepicker select:hover,
 .datepicker select, .datepicker select:focus, .datepicker select:hover
 [datepicker] select, [datepicker] select:focus, [datepicker] select:hover{
@@ -12,7 +20,7 @@ datepicker select, datepicker select:focus, datepicker select:hover,
    overflow: hidden;
    background:none;
    color:#fff;
-   background-color: #138EFA;
+   background-color: #00a5db;
    border: 1px solid rgba(0,0,0,0.05);
    height: 30px;
    border-radius:2px;
@@ -41,7 +49,7 @@ datepicker, .datepicker, [datepicker],
   z-index: 999;
   min-width: 220px;
   margin: 0 auto;
-  width: 101%;
+  width: 50%;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
