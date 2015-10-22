@@ -6,16 +6,16 @@ datepicker a:hover, [datepicker] a:hover, .datepicker a:hover{
   text-decoration:none;
 }
 datepicker select, datepicker select:focus, datepicker select:hover,
-.datepicker select, .datepicker select:focus, .datepicker select:hover
+.datepicker select, .datepicker select:focus, .datepicker select:hover,
 [datepicker] select, [datepicker] select:focus, [datepicker] select:hover{
   width:100%;
    overflow: hidden;
    background:none;
    color:#fff;
    background-color: #138EFA;
-   border: 1px solid rgba(0,0,0,0.05);
-   height: 30px;
    border-radius:2px;
+   border: 0;
+   margin-top:5px;
 }
 datepicker, .datepicker, [datepicker],
 ._720kb-datepicker-calendar-header,
@@ -76,6 +76,15 @@ datepicker, .datepicker, [datepicker],
 ._720kb-datepicker-calendar-header-middle {
   width: 70%;
 }
+
+._720kb-datepicker-calendar-header-closed-pagination::after {
+  content: " \25BE";
+}
+
+._720kb-datepicker-calendar-header-opened-pagination::after {
+  content: " \25F9";
+}
+
 ._720kb-datepicker-calendar-body {
   width: 96%;
   margin: 2%;
@@ -114,7 +123,6 @@ datepicker, .datepicker, [datepicker],
 }
 ._720kb-datepicker-calendar-month span {
   font-size: 13px;
-  margin-left:1%;
   color:rgba(0, 0, 0, 0.4);
 }
 ._720kb-datepicker-calendar-month a span  i {

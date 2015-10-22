@@ -1,12 +1,22 @@
 {
   "name": "angularjs-datepicker",
-  "version": "0.2.5",
+  "version": "0.2.12",
   "description": "A datepicker directive for angularjs.",
   "homepage": "http://720kb.github.io/angular-datepicker",
   "keywords": [
     "date",
     "datepicker",
+    "input",
+    "angularjs",
+    "angular",
     "input"
+  ],
+  "scripts": {
+    "precommit": "grunt lint"
+  },
+  "main": [
+    "dist/angular-datepicker.min.js",
+    "dist/angular-datepicker.min.css"
   ],
   "repository": {
     "type": "git",
@@ -22,7 +32,9 @@
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "grunt-eslint": "*"
+    "grunt-eslint": "*",
+    "grunt-jscs": "*",
+    "husky": "*"
   },
   "author": {
     "name": "Filippo Oretti",
